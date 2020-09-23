@@ -1,0 +1,112 @@
+ELF Header:  Magic:   7F  45  4C  46  01  01  01  00  00  00  00  00  00  00  00  00    Class                            : ELF32  Data                             : 2's complement, little endian  Version                          : 1(current)  OS/ABI                           : UNIX - System V  ABI Version                      : 0  Type                             : Shared object file  Machine                          : AMD X86-64 arrchitecture  version                          : 0X1  Entry point address              : 0X3a0  Start of program headers         : 52 (bytes into file)  Start of section headers         : 5924 (bytes into file)  Flags                            : 0X0  Size of this header              : 52 (bytes)  Size of program headers          : 32 (bytes)  Number of program headers        : 9  Size of section headers          : 40 (bytes)  Number of section headers        : 29  Section header string table index: 28There are 29 section headers, starting at offset 0x1724:Section Headers:  [Nr] Name              Type              Address           Offset                 Size              EntSize           Flags  Link   Info   Align  [ 0]                   NULL              0000000000000000  00000000       0000000000000000  0000000000000000            0     0     0  [ 1] .interp           PROGBITS          0000000000000154  00000154       000000000000001A  0000000000000000    A       0     0     1  [ 2] .note.ABI-tag     NOTE              0000000000000170  00000170       0000000000000020  0000000000000000    A       0     0     4  [ 3] .note.gnu.build-id  NOTE              0000000000000190  00000190       0000000000000024  0000000000000000    A       0     0     4  [ 4] .gnu.hash         GNU_HASH          00000000000001B4  000001B4       0000000000000018  0000000000000004    A       5     0     4  [ 5] .dynsym           DYNSYM            00000000000001CC  000001CC       0000000000000070  0000000000000010    A       6     1     4  [ 6] .dynstr           STRTAB            000000000000023C  0000023C       0000000000000081  0000000000000000    A       0     0     1  [ 7] .gnu.version      GNU_versym        00000000000002BE  000002BE       000000000000000E  0000000000000002    A       5     0     2  [ 8] .gnu.version_r    GNU_verneed       00000000000002CC  000002CC       0000000000000020  0000000000000000    A       6     1     4  [ 9] .rela.dyn         RELA              00000000000002EC  000002EC       0000000000000060  000000000000000c    A       5     0     4  [10] .rela.plt         RELA              000000000000034C  0000034C       000000000000000C  000000000000000c  NONE  [11] .init             PROGBITS          0000000000000358  00000358       0000000000000017  0000000000000000   AX       0     0     4  [12] .plt              PROGBITS          0000000000000370  00000370       0000000000000020  0000000000000010   AX       0     0    16  [13] .plt.got          PROGBITS          0000000000000390  00000390       0000000000000008  0000000000000008   AX       0     0     8  [14] .text             PROGBITS          00000000000003A0  000003A0       0000000000000172  0000000000000000   AX       0     0    16  [15] .fini             PROGBITS          0000000000000514  00000514       0000000000000009  0000000000000000   AX       0     0     4  [16] .rodata           PROGBITS          0000000000000520  00000520       0000000000000034  0000000000000000    A       0     0     8  [17] .eh_frame_hdr     PROGBITS          0000000000000554  00000554       000000000000003C  0000000000000000    A       0     0     4  [18] .eh_frame         PROGBITS          0000000000000590  00000590       00000000000000FC  0000000000000000    A       0     0     4  [19] .init_array       INIT_ARRY         0000000000200EB8  00000EB8       0000000000000004  0000000000000004   WA       0     0     4  [20] .fini_array       FINI_ARRY         0000000000200EBC  00000EBC       0000000000000004  0000000000000004   WA       0     0     4  [21] .dynamic          DYNAMIC           0000000000200EC0  00000EC0       00000000000000F8  0000000000000008   WA       6     0     4  [22] .got              PROGBITS          0000000000200FB8  00000FB8       0000000000000048  0000000000000008   WA       0     0     8  [23] .data             PROGBITS          0000000000201000  00001000       0000000000000008  0000000000000000   WA       0     0     4  [24] .bss              NOBITS            0000000000201008  00001008       0000000000000004  0000000000000000   WA       0     0     1  [25] .comment          PROGBITS          0000000000000000  00001008       0000000000000029  0000000000000001  NONE  [26] .symtab           SYMTAB            0000000000000000  00001034       00000000000003F0  0000000000000010           27    43     4  [27] .strtab           STRTAB            0000000000000000  00001424       0000000000000201  0000000000000000            0     0     1  [28] .shstrtab         STRTAB            0000000000000000  00001625       00000000000000FE  0000000000000000            0     0     1Key to Flags:  W (write), A (alloc), X (execute), M (merge), S (strings), l (large)  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)  O (extra OS processing required) o (OS specific), p (processor specific)Symbol table '.dynsym' contains 7 entries:
+   Num:  Value             Size  Type    Bind   Vis      Ndx  Name
+     0:  0000000000000000  0     NOTYPE  LOCAL   0       UND  
+     1:  0000000000000000  0     FUNC    GLOBAL  0       UND  puts
+     2:  0000000000000000  0     NOTYPE  WEAK    0       UND  _ITM_deregisterTMCloneTable
+     3:  0000000000000000  0     NOTYPE  WEAK    0       UND  __gmon_start__
+     4:  0000000000000000  0     FUNC    WEAK    0       UND  __cxa_finalize
+     5:  0000000000000000  0     FUNC    GLOBAL  0       UND  __libc_start_main
+     6:  0000000000000000  0     NOTYPE  WEAK    0       UND  _ITM_registerTMCloneTable
+Symbol table '.symtab' contains 63 entries:
+   Num:  Value             Size  Type    Bind   Vis      Ndx  Name
+     0:  0000000000000000  0     NOTYPE  LOCAL   0       UND  
+     1:  0000000000000154  0     SECTION LOCAL   0         1  
+     2:  0000000000000170  0     SECTION LOCAL   0         2  
+     3:  0000000000000190  0     SECTION LOCAL   0         3  
+     4:  00000000000001b4  0     SECTION LOCAL   0         4  
+     5:  00000000000001cc  0     SECTION LOCAL   0         5  
+     6:  000000000000023c  0     SECTION LOCAL   0         6  
+     7:  00000000000002be  0     SECTION LOCAL   0         7  
+     8:  00000000000002cc  0     SECTION LOCAL   0         8  
+     9:  00000000000002ec  0     SECTION LOCAL   0         9  
+    10:  000000000000034c  0     SECTION LOCAL   0        10  
+    11:  0000000000000358  0     SECTION LOCAL   0        11  
+    12:  0000000000000370  0     SECTION LOCAL   0        12  
+    13:  0000000000000390  0     SECTION LOCAL   0        13  
+    14:  00000000000003a0  0     SECTION LOCAL   0        14  
+    15:  0000000000000514  0     SECTION LOCAL   0        15  
+    16:  0000000000000520  0     SECTION LOCAL   0        16  
+    17:  0000000000000554  0     SECTION LOCAL   0        17  
+    18:  0000000000000590  0     SECTION LOCAL   0        18  
+    19:  0000000000200eb8  0     SECTION LOCAL   0        19  
+    20:  0000000000200ebc  0     SECTION LOCAL   0        20  
+    21:  0000000000200ec0  0     SECTION LOCAL   0        21  
+    22:  0000000000200fb8  0     SECTION LOCAL   0        22  
+    23:  0000000000201000  0     SECTION LOCAL   0        23  
+    24:  0000000000201008  0     SECTION LOCAL   0        24  
+    25:  0000000000000000  0     SECTION LOCAL   0        25  
+    26:  0000000000000000  0     FILE    LOCAL   0       ABS  crtstuff.c
+    27:  00000000000003d0  0     FUNC    LOCAL   0        14  deregister_tm_clones
+    28:  0000000000000400  0     FUNC    LOCAL   0        14  register_tm_clones
+    29:  0000000000000440  0     FUNC    LOCAL   0        14  __do_global_dtors_aux
+    30:  0000000000201008  1     OBJECT  LOCAL   0        24  completed.7689
+    31:  0000000000200ebc  0     OBJECT  LOCAL   0        20  __do_global_dtors_aux_fini_array_entry
+    32:  0000000000000480  0     FUNC    LOCAL   0        14  frame_dummy
+    33:  0000000000200eb8  0     OBJECT  LOCAL   0        19  __frame_dummy_init_array_entry
+    34:  0000000000000000  0     FILE    LOCAL   0       ABS  test32.c
+    35:  0000000000000000  0     FILE    LOCAL   0       ABS  crtstuff.c
+    36:  0000000000000688  0     OBJECT  LOCAL   0        18  __FRAME_END__
+    37:  0000000000000000  0     FILE    LOCAL   0       ABS  
+    38:  0000000000200ebc  0     NOTYPE  LOCAL   0        19  __init_array_end
+    39:  0000000000200ec0  0     OBJECT  LOCAL   0        21  _DYNAMIC
+    40:  0000000000200eb8  0     NOTYPE  LOCAL   0        19  __init_array_start
+    41:  0000000000000554  0     NOTYPE  LOCAL   0        17  __GNU_EH_FRAME_HDR
+    42:  0000000000200fb8  0     OBJECT  LOCAL   0        22  _GLOBAL_OFFSET_TABLE_
+    43:  0000000000000510  2     FUNC    GLOBAL  0        14  __libc_csu_fini
+    44:  0000000000000000  0     FUNC    GLOBAL  0       UND  puts@@GLIBC_2.16
+    45:  0000000000000000  0     NOTYPE  WEAK    0       UND  _ITM_deregisterTMCloneTable
+    46:  0000000000201000  0     NOTYPE  WEAK    0        23  data_start
+    47:  0000000000201008  0     NOTYPE  GLOBAL  0        23  _edata
+    48:  0000000000000514  0     FUNC    GLOBAL  0        15  _fini
+    49:  0000000000201000  0     NOTYPE  GLOBAL  0        23  __data_start
+    50:  0000000000000000  0     NOTYPE  WEAK    0       UND  __gmon_start__
+    51:  0000000000201004  0     OBJECT  GLOBAL  2        23  __dso_handle
+    52:  0000000000000520  4     OBJECT  GLOBAL  0        16  _IO_stdin_used
+    53:  00000000000004b0  93    FUNC    GLOBAL  0        14  __libc_csu_init
+    54:  000000000020100c  0     NOTYPE  GLOBAL  0        24  _end
+    55:  00000000000003a0  44    FUNC    GLOBAL  0        14  _start
+    56:  0000000000000000  0     FUNC    WEAK    0       UND  __cxa_finalize@@GLIBC_2.16
+    57:  0000000000201008  0     NOTYPE  GLOBAL  0        24  __bss_start
+    58:  0000000000000489  26    FUNC    GLOBAL  0        14  main
+    59:  0000000000000000  0     FUNC    GLOBAL  0       UND  __libc_start_main@@GLIBC_2.16
+    60:  0000000000201008  0     OBJECT  GLOBAL  2        23  __TMC_END__
+    61:  0000000000000000  0     NOTYPE  WEAK    0       UND  _ITM_registerTMCloneTable
+    62:  0000000000000358  0     FUNC    GLOBAL  0        11  _init
+Elf 文件类型是 Shared object file
+入口点位置 0X3A0
+共有 9 程序头, 偏移位置 52
+
+Program Headers:
+  Type            Offset            VirtAddr          PhysAddr        
+                  FileSiz           MemSiz            Flags   Align 
+  PHDR            0000000000000034  0000000000000034  0000000000000034
+                  0000000000000120  0000000000000120  R       4
+  INTERP          0000000000000154  0000000000000154  0000000000000154
+                  000000000000001A  000000000000001A  R       1
+      [Requesting program interpreter: /libx32/ld-linux-x32.so.2]
+  LOAD            0000000000000000  0000000000000000  0000000000000000
+                  000000000000068C  000000000000068C  R E     200000
+  LOAD            0000000000000EB8  0000000000200EB8  0000000000200EB8
+                  0000000000000150  0000000000000154  RW      200000
+  DYNAMIC         0000000000000EC0  0000000000200EC0  0000000000200EC0
+                  00000000000000F8  00000000000000F8  RW      4
+  NOTE            0000000000000170  0000000000000170  0000000000000170
+                  0000000000000044  0000000000000044  R       4
+  GNU_EH_FRAME    0000000000000554  0000000000000554  0000000000000554
+                  000000000000003C  000000000000003C  R       4
+  GNU_STACK       0000000000000000  0000000000000000  0000000000000000
+                  0000000000000000  0000000000000000  RW      10
+  GNU_RELRO       0000000000000EB8  0000000000200EB8  0000000000200EB8
+                  0000000000000148  0000000000000148  R       1
+
+ Section to Segment mapping:
+  段节...
+   0      .shstrtab 
+   1      .interp 
+   2      .interp .note.ABI-tag .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt .init .plt .plt.got .text .fini .rodata .eh_frame_hdr .eh_frame .comment .symtab .strtab .shstrtab 
+   3      .init_array .fini_array .dynamic .got .data .bss 
+   4      .dynamic 
+   5      .note.ABI-tag .note.gnu.build-id 
+   6      .eh_frame_hdr 
+   7      
+   8      .init_array .fini_array .dynamic .got 

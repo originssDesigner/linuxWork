@@ -1,0 +1,34 @@
+
+hello.o：     文件格式 elf64-x86-64
+
+Contents of section .text:
+ 0000 50535152 48c7c004 00000048 c7c30100  PSQRH......H....
+ 0010 000048c7 c1000000 0048c7c2 0a000000  ..H......H......
+ 0020 5a595b58 48c7c001 00000048 c7c30000  ZY[XH......H....
+ 0030 0000cd80 68656c6c 6f776f72 6c6400    ....helloworld. 
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	50                   	push   %rax
+   1:	53                   	push   %rbx
+   2:	51                   	push   %rcx
+   3:	52                   	push   %rdx
+   4:	48 c7 c0 04 00 00 00 	mov    $0x4,%rax
+   b:	48 c7 c3 01 00 00 00 	mov    $0x1,%rbx
+  12:	48 c7 c1 00 00 00 00 	mov    $0x0,%rcx
+  19:	48 c7 c2 0a 00 00 00 	mov    $0xa,%rdx
+  20:	5a                   	pop    %rdx
+  21:	59                   	pop    %rcx
+  22:	5b                   	pop    %rbx
+  23:	58                   	pop    %rax
+  24:	48 c7 c0 01 00 00 00 	mov    $0x1,%rax
+  2b:	48 c7 c3 00 00 00 00 	mov    $0x0,%rbx
+  32:	cd 80                	int    $0x80
+
+0000000000000034 <output>:
+  34:	68 65 6c 6c 6f       	pushq  $0x6f6c6c65
+  39:	77 6f                	ja     aa <output+0x76>
+  3b:	72 6c                	jb     a9 <output+0x75>
+  3d:	64                   	fs
+	...
